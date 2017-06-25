@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+   
+    function findShort(s){
+        //turn string into array
+			var value = s.split(" ");
+        //give variable the value of the length of the first word
+            var shortestWord = value[0].length;
+
+            for (var i = 0; i < value.length; i++) {
+				if(value[i].length < shortestWord){ // If length or the word currently passed through the for loop is less than the length of the word it is compared with...
+	            shortestWord = value[i].length; // ...then shortestWord takes this new value
+                }
+            }
+                    return shortestWord ;		
+    }
+
+console.log(findShort("This is a test"))
+
+    </script>
+</body>
+</html>
